@@ -16,9 +16,14 @@ body {
   color: black;
   background-color: #fff; }
 
+h3 {
+  text-align: center;
+  font-weight: 300;
+  font-size: 30px; }
+
 header {
   width: 100%;
-  height: 100vh;
+  height: auto;
   color: white; }
   header .item {
     width: 100%;
@@ -79,6 +84,112 @@ header {
     background-size: cover;
     height: 100%; }
 
+.about {
+  margin-top: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  width: 100%;
+  z-index: 2; }
+  .about .block-text {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    background-color: #efefef; }
+    .about .block-text p {
+      width: 80%;
+      margin: auto;
+      margin-top: 32px;
+      font-family: "Yantramanav", sans-serif;
+      font-weight: 200;
+      font-size: 16px; }
+  .about .block-text__sec {
+    padding-top: 202px;
+    text-align: center; }
+    .about .block-text__sec .square-text {
+      margin-top: 100px;
+      margin-bottom: 63px;
+      width: 40%; }
+    .about .block-text__sec .charlie {
+      width: 100%;
+      text-align: center; }
+  .about .block-text__third {
+    padding-top: 312px; }
+    .about .block-text__third p {
+      text-align: center;
+      width: 40%; }
+      .about .block-text__third p:last-child {
+        margin-top: 73px; }
+  .about .block {
+    width: 50%;
+    min-width: 500px;
+    color: black; }
+    .about .block img {
+      width: 100%;
+      height: 100%; }
+    .about .block h3 {
+      font-size: 30px;
+      font-weight: 300; }
+
+.GOODS {
+  padding-top: 80px;
+  text-align: center; }
+  .GOODS .description {
+    margin-bottom: 30px; }
+    .GOODS .description .goods-7 {
+      z-index: 10;
+      background-color: #fff; }
+  .GOODS .owl-carousel-2 {
+    width: 30%;
+    margin: auto; }
+    .GOODS .owl-carousel-2 .owl-dots {
+      position: relative;
+      transform: none;
+      left: 0;
+      top: 0; }
+      .GOODS .owl-carousel-2 .owl-dots .owl-dot {
+        text-align: center;
+        position: absolute;
+        color: white;
+        width: 18px;
+        height: 18px; }
+        .GOODS .owl-carousel-2 .owl-dots .owl-dot:nth-child(1):after {
+          content: '1/7'; }
+        .GOODS .owl-carousel-2 .owl-dots .owl-dot:nth-child(2):after {
+          content: '2/7'; }
+        .GOODS .owl-carousel-2 .owl-dots .owl-dot:nth-child(3):after {
+          content: '3/7'; }
+        .GOODS .owl-carousel-2 .owl-dots .owl-dot:nth-child(4):after {
+          content: '4/7'; }
+        .GOODS .owl-carousel-2 .owl-dots .owl-dot:nth-child(5):after {
+          content: '5/7'; }
+        .GOODS .owl-carousel-2 .owl-dots .owl-dot:nth-child(6):after {
+          content: '6/7'; }
+        .GOODS .owl-carousel-2 .owl-dots .owl-dot:nth-child(7):after {
+          content: '7/7'; }
+        .GOODS .owl-carousel-2 .owl-dots .owl-dot:hover, .GOODS .owl-carousel-2 .owl-dots .owl-dot :active, .GOODS .owl-carousel-2 .owl-dots .owl-dot :focus {
+          outline: none; }
+        .GOODS .owl-carousel-2 .owl-dots .owl-dot span {
+          display: none; }
+      .GOODS .owl-carousel-2 .owl-dots .owl-dot.active {
+        outline: none;
+        color: black;
+        width: 46px;
+        height: 46px;
+        font-size: 18px;
+        font-family: "Yantramanav", sans-serif;
+        font-weight: 200; }
+        .GOODS .owl-carousel-2 .owl-dots .owl-dot.active span {
+          display: block;
+          margin-bottom: 2px;
+          width: 26px;
+          height: 26px;
+          background-color: transparent; }
+    .GOODS .owl-carousel-2 .owl-theme .owl-dots .owl-dot.active span, .GOODS .owl-carousel-2 .owl-theme .owl-dots .owl-dot:hover span {
+      background: #dcdcdc; }
+    .GOODS .owl-carousel-2 .owl-theme .owl-nav {
+      display: none; }
+
 .owl-dots {
   position: absolute;
   transform: rotate(90deg);
@@ -101,5 +212,8 @@ header {
 
 .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
   background: #dcdcdc; }
+
+.owl-theme .owl-nav {
+  display: none; }
 
 /*# sourceMappingURL=style.css.map */

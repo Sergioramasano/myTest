@@ -1,4 +1,4 @@
-$('.owl-carousel-1').owlCarousel({
+$('.owl-carousel-2').owlCarousel({
     loop:true,
     margin:10,
     autoplay: true,
@@ -23,8 +23,4 @@ $('.owl-carousel-1').owlCarousel({
             loop:true
         }
     }
-});
-
-$('header').click(function () {
-    $('.owl-carousel').trigger('stop.owl.autoplay') ;
 });

@@ -24,10 +24,15 @@ body {
   color: black;
   background-color: #fff;
 }
+h3{
+  text-align: center;
+  font-weight: 300;
+  font-size: 30px;
+}
 //----------------------------header-------------
 header{
   width: 100%;
-  height: 100vh;
+  height: auto;
   color: white;
   .item{
     width: 100%;
@@ -97,6 +102,166 @@ header{
     height: 100%;
   }
   }
+//------------------ABOUT--------------------
+.about{
+  margin-top: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  width: 100%;
+  z-index: 2;
+  .block-text{
+    padding-top: 120px;
+    padding-bottom: 120px;
+    background-color: #efefef;
+    p{
+      width: 80%;
+      margin: auto;
+      margin-top: 32px;
+      font-family: $font2;
+      font-weight: 200;
+      font-size: 16px;
+    }
+  }
+  .block-text__sec{
+    padding-top: 202px;
+    text-align: center;
+    .square-text{
+        margin-top: 100px;
+        margin-bottom: 63px;
+        width: 40%;
+    }
+    .charlie{
+      width: 100%;
+      text-align: center;
+    }
+  }
+  .block-text__third{
+    padding-top: 312px;
+    p{
+      text-align:center;
+      width: 40%;
+      &:last-child{
+        margin-top: 73px;
+      }
+    }
+  }
+  .block{
+    width: 50%;
+    min-width: 500px;
+    color:black;
+    img{
+      width: 100%;
+      height: 100%;
+    }
+    h3{
+      font-size: 30px;
+      font-weight: 300;
+    }
+  }
+}
+//----------------GOODS SLIDER--------------
+.GOODS{
+  padding-top: 80px;
+  //padding-bottom: 80px;
+  text-align: center;
+  .description{
+    margin-bottom: 30px;
+    .goods-7{
+      z-index: 10;
+      background-color: #fff;
+    }
+  }
+  .owl-carousel-2{
+    width: 30%;
+    margin: auto;
+    p{
+      //margin-top: 80px;
+      //margin-bottom: 35px;
+    }
+    .owl-dots{
+      position: relative;
+      transform: none;
+      left: 0;
+      top: 0;
+      .owl-dot{
+        text-align: center;
+        position: absolute;
+        color:white;
+        width: 18px;
+        height: 18px;
+        &:nth-child(1){
+          &:after{
+          content: '1/7';
+        }}
+        &:nth-child(2){
+          &:after{
+            content: '2/7';
+          }}
+        &:nth-child(3){
+          &:after{
+            content: '3/7';
+          }}
+        &:nth-child(4){
+          &:after{
+            content: '4/7';
+          }}
+        &:nth-child(5){
+          &:after{
+            content: '5/7';
+          }}
+        &:nth-child(6){
+          &:after{
+            content: '6/7';
+          }}
+        &:nth-child(7){
+          &:after{
+            content: '7/7';
+          }}
+
+        &:hover, :active, :focus{
+          outline: none;
+        }
+        span{
+          display: none;
+        }
+      }
+      .owl-dot.active{
+        outline: none;
+        color:black;
+        width: 46px;
+        height: 46px;
+        font-size: 18px;
+        font-family: $font2;
+        font-weight: 200;
+        span{
+          display: block;
+          margin-bottom: 2px;
+          width: 26px;
+          height: 26px;
+          background-color: transparent;
+        }
+      }
+    }
+    .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+      background: #dcdcdc;
+    }
+    .owl-theme .owl-nav {
+      display: none;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+//------------owl-------------
 .owl-dots{
   position: absolute;
   transform: rotate(90deg);
@@ -124,4 +289,7 @@ header{
 }
 .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
   background: #dcdcdc;
+}
+.owl-theme .owl-nav {
+  display: none;
 }
