@@ -1,7 +1,127 @@
+//Variable
+$font1: 'Nunito', sans-serif;
+$font2: 'Yantramanav', sans-serif;
+@mixin a {
+  display: block;
+  text-decoration: none;
+}
+
+a {
+  @include a;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Nunito:300,400|Yantramanav:100,300');
 * {
   margin: 0;
   padding: 0;
   font-size: inherit;
   color: inherit;
   -webkit-font-smoothing: antialiased;
+}
+body {
+  font-family: $font1;
+  font-size: 12px;
+  color: black;
+  background-color: #fff;
+}
+//----------------------------header-------------
+header{
+  width: 100%;
+  height: 100vh;
+  color: white;
+  .item{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding-top: 278px;
+    padding-bottom: 278px;
+    position: relative;
+    background: url("../images/blur_01.jpg");
+    -webkit-background-size:cover ;
+    background-size:cover ;
+    .logo{
+      position: absolute;
+      top: 30px;
+      left: 32px;
+      width: 148px;
+      height: 70px;
+      z-index: 1;
+    }
+    h2{
+      margin-bottom: 24px;
+      font-family: $font1;
+      font-weight: 300;
+      font-size: 60px;
+    }
+    p{
+      max-width: 564px;
+      margin: auto;
+      margin-bottom: 54px;
+      font-family: $font2;
+      font-size: 20px;
+      font-weight: 300;
+    }
+    form{
+      display: block;
+      margin: auto;
+      font-size: 14px;
+      input{
+        border-radius: 30px 0 0 30px ;
+        padding-left: 25px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        border: none;
+        width: 314px;
+        color:gray;
+        &:focus, :hover{
+          outline: none;
+        }
+      }
+      button{
+        cursor: pointer;
+        width: 168px;
+        border-radius: 0 30px 30px 0;
+        padding: 15px 46px 15px 36px;
+        border: none;
+        position: relative;
+        right: 4px;
+        background-color: #20ab50;
+        box-sizing: border-box;
+      }
+    }
+  }
+  .item__2, .item__4{
+    background: url("../images/secBack.jpg");
+    -webkit-background-size:cover ;
+    background-size:cover ;
+    height: 100%;
+  }
+  }
+.owl-dots{
+  position: absolute;
+  transform: rotate(90deg);
+  right: 50px;
+  top: 400px;
+  .owl-dot{
+    text-align: center;
+    &:hover, :active, :focus{
+      outline: none;
+    }
+    span{
+      width: 4px;
+      height: 4px;
+    }
+  }
+  .owl-dot.active{
+    outline: none;
+    span{
+      display: block;
+      margin-bottom: 2px;
+      width: 16px;
+      height: 16px;
+    }
+  }
+}
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+  background: #dcdcdc;
 }
