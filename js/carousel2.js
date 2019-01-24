@@ -3,11 +3,12 @@ $('.owl-carousel-2').owlCarousel({
     margin:10,
     autoplay: true,
     autoplayTimeout: 4000,
-    animateOut: 'slideOutDown',
-    animateIn: 'slideOutDown',
+    animateOut: 'fadeOut',
+    animateIn: 'fadeIn',
     autoplayHoverPause:false,
     responsiveClass:true,
     lazyLoad: true,
+    interval: false,
     responsive:{
         0:{
             items:1,
@@ -24,3 +25,4 @@ $('.owl-carousel-2').owlCarousel({
         }
     }
 });
+

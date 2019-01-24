@@ -21,6 +21,42 @@ h3 {
   font-weight: 300;
   font-size: 30px; }
 
+.preloader {
+  background-color: darkslategray;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  display: block; }
+  .preloader a {
+    display: block;
+    width: 100%;
+    text-align: center;
+    top: 40%;
+    font-size: 30px;
+    position: fixed; }
+    .preloader a img {
+      width: 150px;
+      height: 50px; }
+
+.pre {
+  animation-name: pre;
+  -webkit-animation-name: pre;
+  animation-iteration-count: infinite;
+  transition: 1s ease;
+  animation-duration: 3s;
+  -webkit-animation-duration: 3s;
+  animation-timing-function: ease;
+  -webkit-animation-timing-function: ease;
+  visibility: visible !important; }
+
+@keyframes pre {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
 header {
   width: 100%;
   height: auto;
@@ -35,6 +71,11 @@ header {
     background: url("../images/blur_01.jpg");
     -webkit-background-size: cover;
     background-size: cover; }
+    @media screen and (max-width: 500px) {
+      header .item {
+        padding-top: 78px;
+        padding-bottom: 78px;
+        height: 300px; } }
     header .item .logo {
       position: absolute;
       top: 30px;
@@ -42,11 +83,22 @@ header {
       width: 148px;
       height: 70px;
       z-index: 1; }
+      header .item .logo:hover {
+        transform: translateX(15px);
+        transition: 1s ease; }
+      @media screen and (max-width: 500px) {
+        header .item .logo {
+          left: 30%; } }
     header .item h2 {
       margin-bottom: 24px;
       font-family: "Nunito", sans-serif;
       font-weight: 300;
       font-size: 60px; }
+      @media screen and (max-width: 500px) {
+        header .item h2 {
+          margin-bottom: 10px;
+          font-size: 40px;
+          margin-top: 30px; } }
     header .item p {
       max-width: 564px;
       margin: auto;
@@ -66,6 +118,9 @@ header {
         border: none;
         width: 314px;
         color: gray; }
+        @media screen and (max-width: 500px) {
+          header .item form input {
+            width: 50%; } }
         header .item form input:focus, header .item form input :hover {
           outline: none; }
       header .item form button {
@@ -78,24 +133,50 @@ header {
         right: 4px;
         background-color: #20ab50;
         box-sizing: border-box; }
-  header .item__2, header .item__4 {
+        header .item form button:hover {
+          background-color: orangered;
+          transition: 1s ease; }
+        @media screen and (max-width: 500px) {
+          header .item form button {
+            width: 30%;
+            padding: 15px; } }
+  header .item__2, header .item__5 {
     background: url("../images/secBack.jpg");
     -webkit-background-size: cover;
-    background-size: cover;
-    height: 100%; }
+    background-size: cover; }
 
 .about {
-  margin-top: 0;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: flex-start;
-  width: 100%;
-  z-index: 2; }
+  width: 100%; }
+  .about .one {
+    order: 1; }
+  .about .two {
+    order: 2; }
+  .about .three {
+    order: 3; }
+    @media screen and (max-width: 640px) {
+      .about .three {
+        order: 4; } }
+  .about .four {
+    order: 4; }
+    @media screen and (max-width: 640px) {
+      .about .four {
+        order: 3; } }
+  .about .five {
+    order: 5; }
+  .about .six {
+    order: 6; }
   .about .block-text {
     padding-top: 120px;
     padding-bottom: 120px;
     background-color: #efefef; }
+    @media screen and (max-width: 810px) {
+      .about .block-text {
+        padding-top: 20px;
+        padding-bottom: 20px; } }
     .about .block-text p {
       width: 80%;
       margin: auto;
@@ -103,27 +184,56 @@ header {
       font-family: "Yantramanav", sans-serif;
       font-weight: 200;
       font-size: 16px; }
+      @media screen and (max-width: 500px) {
+        .about .block-text p {
+          margin-top: 15px;
+          width: 90%; } }
   .about .block-text__sec {
     padding-top: 202px;
     text-align: center; }
+    @media screen and (max-width: 810px) {
+      .about .block-text__sec {
+        padding-top: 20px; } }
     .about .block-text__sec .square-text {
       margin-top: 100px;
       margin-bottom: 63px;
       width: 40%; }
+      @media screen and (max-width: 810px) {
+        .about .block-text__sec .square-text {
+          margin-top: 20px;
+          margin-bottom: 23px; } }
+      @media screen and (max-width: 500px) {
+        .about .block-text__sec .square-text {
+          width: 90%; } }
     .about .block-text__sec .charlie {
       width: 100%;
       text-align: center; }
   .about .block-text__third {
     padding-top: 312px; }
+    @media screen and (max-width: 810px) {
+      .about .block-text__third {
+        padding-top: 20px; } }
     .about .block-text__third p {
       text-align: center;
       width: 40%; }
+      @media screen and (max-width: 500px) {
+        .about .block-text__third p {
+          width: 90%; } }
       .about .block-text__third p:last-child {
         margin-top: 73px; }
+        @media screen and (max-width: 810px) {
+          .about .block-text__third p:last-child {
+            margin-top: 23px; } }
   .about .block {
     width: 50%;
-    min-width: 500px;
+    min-width: 400px;
     color: black; }
+    @media screen and (max-width: 810px) {
+      .about .block {
+        min-width: 320px; } }
+    @media screen and (max-width: 640px) {
+      .about .block {
+        width: 100%; } }
     .about .block img {
       width: 100%;
       height: 100%; }
@@ -136,12 +246,18 @@ header {
   text-align: center; }
   .GOODS .description {
     margin-bottom: 30px; }
+    @media screen and (max-width: 810px) {
+      .GOODS .description {
+        margin-bottom: 0; } }
     .GOODS .description .goods-7 {
       z-index: 10;
       background-color: #fff; }
   .GOODS .owl-carousel-2 {
     width: 30%;
     margin: auto; }
+    @media screen and (max-width: 810px) {
+      .GOODS .owl-carousel-2 {
+        width: 90%; } }
     .GOODS .owl-carousel-2 .owl-dots {
       position: relative;
       transform: none;
@@ -195,16 +311,31 @@ header {
   background: url("../images/cross_02.png") top center #e1e0e1 no-repeat;
   background-size: cover;
   margin-top: 80px; }
+  @media screen and (min-width: 1500px) {
+    .whyPlae {
+      height: 100vh;
+      background-position: 0 -100px; } }
+  @media screen and (max-width: 800px) {
+    .whyPlae {
+      padding: 20px;
+      margin-top: 80px; } }
   .whyPlae .why-head, .whyPlae h3 {
     text-align: center; }
   .whyPlae .wrapper-white {
     display: flex;
     flex-direction: row;
     justify-content: space-between; }
+    @media screen and (max-width: 800px) {
+      .whyPlae .wrapper-white {
+        display: block; } }
     .whyPlae .wrapper-white .white-container {
       display: flex;
       flex-direction: column;
       justify-content: flex-start; }
+      @media screen and (max-width: 800px) {
+        .whyPlae .wrapper-white .white-container {
+          flex-direction: row;
+          flex-wrap: wrap; } }
       .whyPlae .wrapper-white .white-container .white-block {
         margin-top: 10px;
         width: 234px;
@@ -214,6 +345,15 @@ header {
         padding: 15px;
         font-size: 15px;
         box-sizing: border-box; }
+        @media screen and (max-width: 800px) {
+          .whyPlae .wrapper-white .white-container .white-block {
+            width: 100%;
+            margin: 0;
+            margin-top: 10px;
+            opacity: 0.6; } }
+        @media screen and (max-width: 1200px) {
+          .whyPlae .wrapper-white .white-container .white-block:after, .whyPlae .wrapper-white .white-container .white-block:before {
+            display: none; } }
         .whyPlae .wrapper-white .white-container .white-block p {
           font-family: "Yantramanav", sans-serif; }
           .whyPlae .wrapper-white .white-container .white-block p:first-child {
@@ -440,6 +580,62 @@ header {
 .CONTACTS {
   padding-bottom: 40px;
   background-color: powderblue; }
+  .CONTACTS .toggler {
+    width: 60px;
+    height: 60px;
+    background-color: #fff;
+    margin: auto;
+    border-radius: 50%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    position: relative;
+    display: none; }
+    @media screen and (max-width: 500px) {
+      .CONTACTS .toggler {
+        display: block; } }
+    .CONTACTS .toggler:active span {
+      transition: 1s; }
+      .CONTACTS .toggler:active span:first-child {
+        transform: translateY(12px) translateX(5px) rotate(45deg);
+        transition: all 0.1s ease; }
+      .CONTACTS .toggler:active span:nth-child(2) {
+        transform: translateX(130px);
+        transition: 0.1s ease; }
+      .CONTACTS .toggler:active span:nth-child(3) {
+        transform: translateY(-7px) translateX(-13px) rotate(-45deg);
+        transition: all 0.1s ease; }
+    .CONTACTS .toggler span {
+      display: block;
+      height: 1px;
+      position: absolute;
+      left: 30%; }
+      .CONTACTS .toggler span:nth-child(1) {
+        top: 8px; }
+      .CONTACTS .toggler span:nth-child(2) {
+        top: 18px; }
+      .CONTACTS .toggler span:nth-child(3) {
+        top: 28px; }
+  .CONTACTS .toggler {
+    animation-name: toggler;
+    -webkit-animation-name: toggler;
+    animation-iteration-count: infinite;
+    transition: 1s ease;
+    animation-duration: 3s;
+    -webkit-animation-duration: 3s;
+    animation-timing-function: ease;
+    -webkit-animation-timing-function: ease;
+    visibility: visible !important; }
+@keyframes toggler {
+  0% {
+    background-color: white; }
+  25% {
+    background-color: mediumvioletred; }
+  50% {
+    background-color: pink; }
+  75% {
+    background-color: plum; }
+  100% {
+    background-color: white; } }
   .CONTACTS p {
     font-size: 18px;
     font-family: "Yantramanav", sans-serif; }
@@ -451,16 +647,34 @@ header {
     justify-content: space-between;
     margin: auto;
     margin-top: 45px; }
-    .CONTACTS .flex p {
+    @media screen and (max-width: 500px) {
+      .CONTACTS .flex {
+        flex-direction: column;
+        width: 100%;
+        text-align: center; } }
+    .CONTACTS .flex a {
+      color: #1faa50; }
+      .CONTACTS .flex a:hover {
+        opacity: 0.5;
+        transition: 1s ease; }
+    .CONTACTS .flex p, .CONTACTS .flex a {
+      display: block;
       width: 40%; }
-      .CONTACTS .flex p:first-child {
-        color: #1faa50; }
+      @media screen and (max-width: 500px) {
+        .CONTACTS .flex p, .CONTACTS .flex a {
+          width: 100%;
+          text-align: center; } }
   .CONTACTS .container-flex {
     margin-bottom: 91px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap; }
+    @media screen and (max-width: 500px) {
+      .CONTACTS .container-flex {
+        display: none;
+        text-align: center;
+        justify-content: center; } }
     .CONTACTS .container-flex .txt-block {
       width: 140px;
       margin-left: 43px;
@@ -468,8 +682,40 @@ header {
       margin-top: 63px;
       display: block;
       text-align: left; }
+      @media screen and (max-width: 500px) {
+        .CONTACTS .container-flex .txt-block {
+          width: 90%;
+          margin: auto !important;
+          margin-top: 20px !important;
+          background-color: #fff;
+          opacity: 1;
+          padding: 5px;
+          border-radius: 20px;
+          box-sizing: border-box; } }
+      @media screen and (min-width: 1500px) {
+        .CONTACTS .container-flex .txt-block {
+          width: 22%; } }
+      .CONTACTS .container-flex .txt-block a {
+        color: #1faa50;
+        display: block;
+        font-size: 15px; }
+        .CONTACTS .container-flex .txt-block a:hover {
+          opacity: 0.3;
+          transition: 1s ease; }
+        @media screen and (min-width: 1500px) {
+          .CONTACTS .container-flex .txt-block a {
+            font-size: 25px; } }
+        @media screen and (max-width: 500px) {
+          .CONTACTS .container-flex .txt-block a {
+            text-align: center; } }
       .CONTACTS .container-flex .txt-block p {
         font-size: 15px; }
+        @media screen and (min-width: 1500px) {
+          .CONTACTS .container-flex .txt-block p {
+            font-size: 25px; } }
+        @media screen and (max-width: 500px) {
+          .CONTACTS .container-flex .txt-block p {
+            text-align: center; } }
         .CONTACTS .container-flex .txt-block p:first-child {
           font-weight: bold; }
         .CONTACTS .container-flex .txt-block p:nth-child(2) {
@@ -477,8 +723,6 @@ header {
           margin-bottom: 15px;
           line-height: 25px;
           font-family: "Yantramanav", sans-serif; }
-        .CONTACTS .container-flex .txt-block p:nth-child(3) {
-          color: #1faa50; }
 
 .FORM {
   background-color: #f3f3f3;
@@ -499,6 +743,9 @@ header {
       border: none;
       width: 314px;
       color: gray; }
+      @media screen and (max-width: 500px) {
+        .FORM form input {
+          width: 50%; } }
       .FORM form input:focus, .FORM form input :hover {
         outline: none; }
     .FORM form button {
@@ -511,6 +758,13 @@ header {
       right: 4px;
       background-color: #20ab50;
       box-sizing: border-box; }
+      .FORM form button:hover {
+        background-color: orangered;
+        transition: 1s ease; }
+      @media screen and (max-width: 500px) {
+        .FORM form button {
+          width: 30%;
+          padding: 15px; } }
 
 footer {
   background-color: #dcdcdc;
@@ -528,6 +782,15 @@ footer {
   transform: rotate(90deg);
   right: 50px;
   top: 400px; }
+  @media screen and (max-width: 800px) {
+    .owl-dots {
+      transform: none;
+      right: 35%;
+      top: 90%; } }
+  @media screen and (max-width: 500px) {
+    .owl-dots {
+      right: 24%;
+      top: 90%; } }
   .owl-dots .owl-dot {
     text-align: center; }
     .owl-dots .owl-dot:hover, .owl-dots .owl-dot :active, .owl-dots .owl-dot :focus {
@@ -548,5 +811,14 @@ footer {
 
 .owl-theme .owl-nav {
   display: none; }
+
+::-webkit-scrollbar {
+  height: 10px;
+  width: 5px;
+  background: lightslategray; }
+
+::-webkit-scrollbar-thumb {
+  background: green;
+  -webkit-border-radius: 0; }
 
 /*# sourceMappingURL=style.css.map */

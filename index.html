@@ -8,16 +8,28 @@
     <!--Styles-->
     <link rel="stylesheet" href="css/owl.theme.default.css">
     <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/style.css">
     <!--JQuery-->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    <script
+            src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
             crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <!--owl-carousel-js-->
     <script src="js/owl.carousel.min.js"></script>
+    <!--preloader-js-->
+    <script src="js/preloader.js"></script>
+    <!--wow-js-->
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
 </head>
 <body>
-
+<!----------------------------.preloader------------------------------>
+<div class="preloader" id="preloader"><a href="#" ><img src="images/logo_03.png" class="pre" alt="logo"></a></div>
+<!---------------------------header------------------------------->
 <header class="owl-carousel owl-carousel-1 owl-theme text-center">
     <div class="item item__1">
         <a href="#" class="logo"><img src="images/logo_03.png" alt="logo"></a>
@@ -56,7 +68,7 @@
         <a href="#" class="logo"><img src="images/logo_03.png" alt="logo"></a>
         <h2>Coming Soon</h2>
         <p>goplae.co.uk is coming soon but in the meantime check out this page and sign up to our newsletter</p>
-        <form action="#" method="get">
+        <form action="#" class="wow bounceInUp " data-wow-offset="300" method="get">
             <input type="text" placeholder="Enter email address">
             <button>Sign Up</button>
         </form>
@@ -84,8 +96,8 @@
     <script src="js/myCarousel.js"></script>
 </header>
 <!-------------------ABOUT--------------------------->
-<section class="container about">
-    <div class="block block-text block-text__first">
+<section class="container about" >
+    <div class="block block-text block-text__first one wow flipInY" data-wow-offset="300">
         <h3>About Plae</h3>
         <p>Previously a Designer for Puma and Adidas, Head Designer Ryan Ringholz has started a new revolution in kids
             trainers. Using technology usually reserved for elite athletes, Plae creates shoes designed especially for a
@@ -103,29 +115,29 @@
             and labour is fair and child-free.
         </p>
     </div>
-    <div class="block block-img">
+    <div class="block block-img two wow bounceInUp " data-wow-offset="300">
         <img src="images/photo1_03.jpg" alt="photo">
     </div>
-    <div class="block block-img">
+    <div class="block block-img three wow bounceInUp " data-wow-offset="300">
         <img src="images/photo2_02.jpg" alt="photo">
     </div>
-    <div class="block block-text block-text__sec">
+    <div class="block block-text block-text__sec four wow bounceInUp " data-wow-offset="300">
         <h3>What our customers say</h3>
         <p class="square-text">I like them because they are very comfy and soft inside. They are really light which
             means I run faster. I like the cool straps that I can change</p>
         <p class="charlie">Charlie (age 8)</p>
     </div>
-    <div class="block block-text block-text__third">
+    <div class="block block-text block-text__third five wow bounceInUp " data-wow-offset="300">
         <p>I like that I can do PE in them because they're so comfy and then after school in the park, the bottoms are
             grippy so I can climb really well</p>
         <p>Edie (age 6)</p>
     </div>
-    <div class="block block-img">
+    <div class="block block-img six  wow bounceInUp " data-wow-offset="300">
         <img src="images/photo3_03.jpg" alt="photo">
     </div>
 </section>
 <!--------------------GOODS SLIDER-------------->
-<section class="GOODS">
+<section class="GOODS wow flipInY" data-wow-offset="300">
     <h3>The Range</h3>
     <p class="description">View the styles available now from select stockists</p>
     <div class="owl-carousel owl-carousel-2 owl-theme">
@@ -168,188 +180,197 @@
     <script src="js/carousel2.js"></script>
 </section>
 <!-----------------WHY PLAE-------------------------->
-<section class="whyPlae">
+<section class="whyPlae wow flipInY" data-wow-offset="300">
     <h3>Why Plae?</h3>
     <p class="why-head">Some of the features that make Plae shoes so good for kids</p>
     <div class="wrapper-white">
-    <div class="white-container white-container__left">
-        <div class="white-block white-block--first">
-            <p>Pull Tab</p>
-            <p>makes it easy for little hands and fingers to get their shoes </p>
+        <div class="white-container white-container__left">
+            <div class="white-block white-block--first">
+                <p>Pull Tab</p>
+                <p>makes it easy for little hands and fingers to get their shoes </p>
+            </div>
+            <div class="white-block white-block--second">
+                <p>Shock Absorption</p>
+                <p>removable ECO-ORTHOLITE® anti-microbial, anti-bacterial insole, made from castor beans, provides
+                    superior </p>
+            </div>
+            <div class="white-block white-block--third">
+                <p>Custom Fit & Style</p>
+                <p>interchangeable tabs come in S,M,L,XL sizes to accommodate instep widths and allows kids to make it
+                    their own with different color, material and print options. Plae shoes also have the ability to </p>
+            </div>
+            <div class="white-block white-block-fourth">
+                <p>Eco-Friendly</p>
+                <p>made in a solar powered, fair labour factory using recycled milk jugs (PET), ISO certified leathers,
+                    and water-based </p>
+            </div>
         </div>
-        <div class="white-block white-block--second">
-            <p>Shock Absorption</p>
-            <p>removable ECO-ORTHOLITE® anti-microbial, anti-bacterial insole, made from castor beans, provides superior </p>
-        </div>
-        <div class="white-block white-block--third">
-            <p>Custom Fit & Style</p>
-            <p>interchangeable tabs come in S,M,L,XL sizes to accommodate instep widths and allows kids to make it their own with different color, material and print options. Plae shoes also have the ability to </p>
-        </div>
-        <div class="white-block white-block-fourth">
-            <p>Eco-Friendly</p>
-            <p>made in a solar powered, fair labour factory using recycled milk jugs (PET), ISO certified leathers, and water-based </p>
-        </div>
-    </div>
 
-    <div class="white-container white-container__right">
-        <div class="white-block white-block--right_f">
-            <p>Machine Washable*</p>
-            <p>or when kids get dirty.</p>
+        <div class="white-container white-container__right">
+            <div class="white-block white-block--right_f">
+                <p>Machine Washable*</p>
+                <p>or when kids get dirty.</p>
+            </div>
+            <div class="white-block white-block-right_s">
+                <p>Anatomical Form</p>
+                <p>specially engineered sole follows the natural contour of a child’s foot - which is mostly </p>
+            </div>
+            <div class="white-block white-block-right_t">
+                <p>Flexible Sole</p>
+                <p>promotes natural movement by allowing for a free range of movement.</p>
+            </div>
+            <div class="white-block white-block-right_fo">
+                <p>Passive Traction</p>
+                <p>promotes natural movement by providing grip on loose earth without compromising contact on hard
+                    surfaces.</p>
+            </div>
+            <div class="white-block white-block-right_five">
+                <p>Toe Guard</p>
+                <p>protects both the foot and shoe from toe drag.</p>
+            </div>
         </div>
-        <div class="white-block white-block-right_s">
-            <p>Anatomical Form</p>
-            <p>specially engineered sole follows the natural contour of a child’s foot - which is mostly </p>
-        </div>
-        <div class="white-block white-block-right_t">
-            <p>Flexible Sole</p>
-            <p>promotes natural movement by allowing for a free range of movement.</p>
-        </div>
-        <div class="white-block white-block-right_fo">
-            <p>Passive Traction</p>
-            <p>promotes natural movement by providing grip on loose earth without compromising contact on hard surfaces.</p>
-        </div>
-        <div class="white-block white-block-right_five">
-            <p>Toe Guard</p>
-            <p>protects both the foot and shoe from toe drag.</p>
-        </div>
-    </div>
     </div>
 </section>
 <!--------------------------CONTACTS---------------------->
-<section class="GOODS CONTACTS">
+<section class="GOODS CONTACTS wow bounceInUp " data-wow-offset="300">
     <h3>Where can you find us?</h3>
     <p>See below our UK stockist list</p>
-        <div class="container-flex">
-<div class="txt-block">
-    <p>Best Foot Forward</p>
-    <p>76 Liverpool Road
-        Preston
-        PR1 0QD
-        0208 969 7565</p>
-    <p>bestfootforward.co.uk</p>
-</div>
-            <div class="txt-block">
-                <p>Best Foot Forward</p>
-                <p>76 Liverpool Road
-                    Preston
-                    PR1 0QD
-                    0208 969 7565</p>
-                <p>bestfootforward.co.uk</p>
-            </div>
-            <div class="txt-block">
-                <p>Best Foot Forward</p>
-                <p>76 Liverpool Road
-                    Preston
-                    PR1 0QD
-                    0208 969 7565</p>
-                <p>bestfootforward.co.uk</p>
-            </div>
-            <div class="txt-block">
-                <p>Best Foot Forward</p>
-                <p>76 Liverpool Road
-                    Preston
-                    PR1 0QD
-                    0208 969 7565</p>
-                <p>bestfootforward.co.uk</p>
-            </div>
-            <div class="txt-block">
-                <p>Best Foot Forward</p>
-                <p>76 Liverpool Road
-                    Preston
-                    PR1 0QD
-                    0208 969 7565</p>
-                <p>bestfootforward.co.uk</p>
-            </div>
-            <div class="txt-block">
-                <p>Best Foot Forward</p>
-                <p>76 Liverpool Road
-                    Preston
-                    PR1 0QD
-                    0208 969 7565</p>
-                <p>bestfootforward.co.uk</p>
-            </div>
-            <div class="txt-block">
-                <p>Best Foot Forward</p>
-                <p>76 Liverpool Road
-                    Preston
-                    PR1 0QD
-                    0208 969 7565</p>
-                <p>bestfootforward.co.uk</p>
-            </div>
-            <div class="txt-block">
-                <p>Best Foot Forward</p>
-                <p>76 Liverpool Road
-                    Preston
-                    PR1 0QD
-                    0208 969 7565</p>
-                <p>bestfootforward.co.uk</p>
-            </div>
-            <div class="txt-block">
-                <p>Best Foot Forward</p>
-                <p>76 Liverpool Road
-                    Preston
-                    PR1 0QD
-                    0208 969 7565</p>
-                <p>bestfootforward.co.uk</p>
-            </div>
-            <div class="txt-block">
-                <p>Best Foot Forward</p>
-                <p>76 Liverpool Road
-                    Preston
-                    PR1 0QD
-                    0208 969 7565</p>
-                <p>bestfootforward.co.uk</p>
-            </div>
-            <div class="txt-block">
-                <p>Best Foot Forward</p>
-                <p>76 Liverpool Road
-                    Preston
-                    PR1 0QD
-                    0208 969 7565</p>
-                <p>bestfootforward.co.uk</p>
-            </div>
-            <div class="txt-block">
-                <p>Best Foot Forward</p>
-                <p>76 Liverpool Road
-                    Preston
-                    PR1 0QD
-                    0208 969 7565</p>
-                <p>bestfootforward.co.uk</p>
-            </div>
-            <div class="txt-block">
-                <p>Best Foot Forward</p>
-                <p>76 Liverpool Road
-                    Preston
-                    PR1 0QD
-                    0208 969 7565</p>
-                <p>bestfootforward.co.uk</p>
-            </div>
-            <div class="txt-block">
-                <p>Best Foot Forward</p>
-                <p>76 Liverpool Road
-                    Preston
-                    PR1 0QD
-                    0208 969 7565</p>
-                <p>bestfootforward.co.uk</p>
-            </div>
-            <div class="txt-block">
-                <p>Best Foot Forward</p>
-                <p>76 Liverpool Road
-                    Preston
-                    PR1 0QD
-                    0208 969 7565</p>
-                <p>bestfootforward.co.uk</p>
-            </div>
+    <div class="toggler">
+        <span>____</span>
+        <span>____</span>
+        <span>____</span>
+    </div>
+    <div class="container-flex">
+        <div class="txt-block">
+            <p>Best Foot Forward</p>
+            <p>76 Liverpool Road
+                Preston
+                PR1 0QD
+                0208 969 7565</p>
+            <a href="#">bestfootforward.co.uk</a>
         </div>
+        <div class="txt-block">
+            <p>Best Foot Forward</p>
+            <p>76 Liverpool Road
+                Preston
+                PR1 0QD
+                0208 969 7565</p>
+            <a href="#">bestfootforward.co.uk</a>
+        </div>
+        <div class="txt-block">
+            <p>Best Foot Forward</p>
+            <p>76 Liverpool Road
+                Preston
+                PR1 0QD
+                0208 969 7565</p>
+            <a href="#">bestfootforward.co.uk</a>
+        </div>
+        <div class="txt-block">
+            <p>Best Foot Forward</p>
+            <p>76 Liverpool Road
+                Preston
+                PR1 0QD
+                0208 969 7565</p>
+            <a href="#">bestfootforward.co.uk</a>
+        </div>
+        <div class="txt-block">
+            <p>Best Foot Forward</p>
+            <p>76 Liverpool Road
+                Preston
+                PR1 0QD
+                0208 969 7565</p>
+            <a href="#">bestfootforward.co.uk</a>
+        </div>
+        <div class="txt-block">
+            <p>Best Foot Forward</p>
+            <p>76 Liverpool Road
+                Preston
+                PR1 0QD
+                0208 969 7565</p>
+            <a href="#">bestfootforward.co.uk</a>
+        </div>
+        <div class="txt-block">
+            <p>Best Foot Forward</p>
+            <p>76 Liverpool Road
+                Preston
+                PR1 0QD
+                0208 969 7565</p>
+            <a href="#">bestfootforward.co.uk</a>
+        </div>
+        <div class="txt-block">
+            <p>Best Foot Forward</p>
+            <p>76 Liverpool Road
+                Preston
+                PR1 0QD
+                0208 969 7565</p>
+            <a href="#">bestfootforward.co.uk</a>
+        </div>
+        <div class="txt-block">
+            <p>Best Foot Forward</p>
+            <p>76 Liverpool Road
+                Preston
+                PR1 0QD
+                0208 969 7565</p>
+            <a href="#">bestfootforward.co.uk</a>
+        </div>
+        <div class="txt-block">
+            <p>Best Foot Forward</p>
+            <p>76 Liverpool Road
+                Preston
+                PR1 0QD
+                0208 969 7565</p>
+            <a href="#">bestfootforward.co.uk</a>
+        </div>
+        <div class="txt-block">
+            <p>Best Foot Forward</p>
+            <p>76 Liverpool Road
+                Preston
+                PR1 0QD
+                0208 969 7565</p>
+            <a href="#">bestfootforward.co.uk</a>
+        </div>
+        <div class="txt-block">
+            <p>Best Foot Forward</p>
+            <p>76 Liverpool Road
+                Preston
+                PR1 0QD
+                0208 969 7565</p>
+            <a href="#">bestfootforward.co.uk</a>
+        </div>
+        <div class="txt-block">
+            <p>Best Foot Forward</p>
+            <p>76 Liverpool Road
+                Preston
+                PR1 0QD
+                0208 969 7565</p>
+            <a href="#">bestfootforward.co.uk</a>
+        </div>
+        <div class="txt-block">
+            <p>Best Foot Forward</p>
+            <p>76 Liverpool Road
+                Preston
+                PR1 0QD
+                0208 969 7565</p>
+            <a href="#">bestfootforward.co.uk</a>
+        </div>
+        <div class="txt-block">
+            <p>Best Foot Forward</p>
+            <p>76 Liverpool Road
+                Preston
+                PR1 0QD
+                0208 969 7565</p>
+            <a href="#">bestfootforward.co.uk</a>
+        </div>
+    </div>
     <h3>Like to stock Plae? </h3>
     <p>Call or email us to send an enquiry </p>
     <div class="flex">
-        <p>hello@goplae.co.uk</p>
+        <a href="#">bestfootforward.co.uk</a>
         <p>07947 301292</p>
     </div>
 </section>
 <!-------------------------FORM------------------->
-<section class="GOODS FORM">
+<section class="GOODS FORM wow fadeInLeft" data-wow-offset="300">
     <h3>Be the first to see goplae.co.uk</h3>
     <p>Sign Up for the latest news</p>
     <form action="#" method="get">
@@ -362,6 +383,6 @@
     Copyright © 2015 Craftymothers ltd. All Rights Reserved
 </footer>
 
-
+<script src="js/script.js"></script>
 </body>
 </html>
