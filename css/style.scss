@@ -160,6 +160,8 @@ header {
       font-size: 14px;
       input {
         border-radius: 30px 0 0 30px;
+        -moz-border-radius:30px 0 0 30px;
+        -webkit-border-radius:30px 0 0 30px;
         padding-left: 25px;
         padding-top: 15px;
         padding-bottom: 15px;
@@ -177,6 +179,8 @@ header {
         cursor: pointer;
         width: 168px;
         border-radius: 0 30px 30px 0;
+        -moz-border-radius:0 30px 30px 0;
+        -webkit-border-radius:0 30px 30px 0;
         padding: 15px 46px 15px 36px;
         border: none;
         position: relative;
@@ -459,6 +463,8 @@ header {
         background-color: #fff;
         color: black;
         border-radius: 10px;
+        -moz-border-radius:10px;
+        -webkit-border-radius:10px;
         padding: 15px;
         font-size: 15px;
         box-sizing: border-box;
@@ -510,6 +516,8 @@ header {
           height: 20px;
           background: white;
           border-radius: 50%;
+          -moz-border-radius:50%;
+          -webkit-border-radius:50%;
           border: 3px solid whitesmoke;
           top: 125%;
           right: -105px;
@@ -535,6 +543,8 @@ header {
           height: 20px;
           background: white;
           border-radius: 50%;
+          -moz-border-radius:50%;
+          -webkit-border-radius:50%;
           border: 3px solid whitesmoke;
           top: 60%;
           right: -105px;
@@ -560,6 +570,8 @@ header {
           height: 20px;
           background: white;
           border-radius: 50%;
+          -moz-border-radius:50%;
+          -webkit-border-radius:50%;
           border: 3px solid whitesmoke;
           top: 0;
           right: -282px;
@@ -585,6 +597,8 @@ header {
           height: 20px;
           background: white;
           border-radius: 50%;
+          -moz-border-radius:50%;
+          -webkit-border-radius:50%;
           border: 3px solid whitesmoke;
           top: 42%;
           right: -105px;
@@ -613,6 +627,8 @@ header {
           height: 20px;
           background: white;
           border-radius: 50%;
+          -moz-border-radius:50%;
+          -webkit-border-radius:50%;
           border: 3px solid whitesmoke;
           top: 130%;
           left: -300px;
@@ -637,6 +653,8 @@ header {
           height: 20px;
           background: white;
           border-radius: 50%;
+          -moz-border-radius:50%;
+          -webkit-border-radius:50%;
           border: 3px solid whitesmoke;
           top: 18px;
           left: -380px;
@@ -662,6 +680,8 @@ header {
           height: 20px;
           background: white;
           border-radius: 50%;
+          -moz-border-radius:50%;
+          -webkit-border-radius:50%;
           border: 3px solid whitesmoke;
           left: -110px;
           top: -25px;
@@ -686,6 +706,8 @@ header {
           height: 20px;
           background: white;
           border-radius: 50%;
+          -moz-border-radius:50%;
+          -webkit-border-radius:50%;
           border: 3px solid whitesmoke;
           top: 18px;
           left: -170px;
@@ -711,6 +733,8 @@ header {
           height: 20px;
           background: white;
           border-radius: 50%;
+          -moz-border-radius:50%;
+          -webkit-border-radius:50%;
           border: 3px solid whitesmoke;
           top: 70%;
           left: -202px;
@@ -736,6 +760,8 @@ header {
           height: 20px;
           background: white;
           border-radius: 50%;
+          -moz-border-radius:50%;
+          -webkit-border-radius:50%;
           border: 3px solid whitesmoke;
           top: 130%;
           left: -300px;
@@ -758,6 +784,8 @@ header {
     background-color: #fff;
     margin: auto;
     border-radius: 50%;
+    -moz-border-radius:50%;
+    -webkit-border-radius:50%;
     margin-top: 20px;
     margin-bottom: 20px;
     position: relative;
@@ -886,6 +914,8 @@ header {
         opacity: 1;
         padding: 5px;
         border-radius: 20px;
+        -moz-border-radius:20px;
+        -webkit-border-radius:20px;
         box-sizing: border-box;
         -moz-box-sizing: border-box;
         -webkit-box-sizing: border-box;
@@ -945,6 +975,8 @@ header {
     margin-top: 48px;
     input {
       border-radius: 30px 0 0 30px;
+      -moz-border-radius:30px 0 0 30px;
+      -webkit-border-radius:30px 0 0 30px;
       padding-left: 25px;
       padding-top: 15px;
       padding-bottom: 15px;
@@ -962,6 +994,8 @@ header {
       cursor: pointer;
       width: 168px;
       border-radius: 0 30px 30px 0;
+      -moz-border-radius:0 30px 30px 0;
+      -webkit-border-radius:0 30px 30px 0;
       padding: 15px 46px 15px 36px;
       border: none;
       position: relative;
