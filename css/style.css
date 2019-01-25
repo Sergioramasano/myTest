@@ -21,6 +21,9 @@ h3 {
   font-weight: 300;
   font-size: 30px; }
 
+button:active, button:focus, button:hover {
+  outline: none; }
+
 .preloader {
   background-color: darkslategray;
   width: 100%;
