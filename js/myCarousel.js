@@ -29,5 +29,5 @@ $('.owl-carousel-1').owlCarousel({
 });
 
 $('header').click(function () {
-    $('.owl-carousel').trigger('stop.owl.autoplay');
+    $('.owl-carousel-1').trigger('stop.owl.autoplay');
 });
