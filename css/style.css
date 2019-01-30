@@ -726,7 +726,7 @@ header {
     font-family: "Yantramanav", sans-serif; }
   .CONTACTS .flex {
     font-size: 18px;
-    max-width: 470px;
+    width: 470px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -915,5 +915,17 @@ footer {
 ::-webkit-scrollbar-thumb {
   background: green;
   -webkit-border-radius: 0; }
+
+.firstSpan {
+  transform: translateY(12px) translateX(8px) rotate(45deg);
+  transition: all 0.1s ease; }
+
+.secSpan {
+  display: none !important;
+  transition: 0.1s ease; }
+
+.thSpan {
+  transform: translateY(-7px) translateX(-9px) rotate(-45deg);
+  transition: all 0.1s ease; }
 
 /*# sourceMappingURL=style.css.map */
