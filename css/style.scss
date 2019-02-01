@@ -837,6 +837,9 @@ header {
     margin-bottom: 20px;
     position: relative;
     display: none;
+    &:hover{
+      cursor: pointer;
+    }
     @media screen and (max-width: 500px) {
       display: block;
     }

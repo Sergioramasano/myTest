@@ -675,6 +675,8 @@ header {
     margin-bottom: 20px;
     position: relative;
     display: none; }
+    .CONTACTS .toggler:hover {
+      cursor: pointer; }
     @media screen and (max-width: 500px) {
       .CONTACTS .toggler {
         display: block; } }
